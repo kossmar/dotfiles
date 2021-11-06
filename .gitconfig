@@ -1,0 +1,12 @@
+
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Mar Koss
+	email = mar.koss@icloud.com
+#	email = mar.koss@icloud.com
+
+[init]
+    templateDir = ~/.config/git/template/
+[core]
+	excludesfile = /Users/markoss/.gitignore_global
