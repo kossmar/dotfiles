@@ -28,3 +28,6 @@ pushd ~/.vim/bundle
 # install NERDCommenter
 cd ~/.vim/bundle
 git clone https://github.com/preservim/nerdcommenter.git
+
+# Install plugin directory
+mkdir -p ~/.vim/plugin && curl -LSso ~/.vim/plugin/taboo.vim https://raw.githubusercontent.com/gcmt/taboo.vim/master/plugin/taboo.vim
