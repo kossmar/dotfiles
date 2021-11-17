@@ -146,3 +146,8 @@ source $ZSH/oh-my-zsh.sh
 alias gitk='cd $HOME/Coding/github.com/kossmar'
 alias gitnwm='cd $GOPATH/src/keybase/private/nwmod/nwmod'
 alias viminstall='vim -c "Install"'
+alias vimo='vim -c "O"'
+alias vimn='vim -c "NERDTreeToggle"'
+alias vimr='vim -S .session.vim'
+alias vimtest='vim -c "Test"'
+alias icat="kitty +kitten icat"
