@@ -1,4 +1,4 @@
-" Pathogen
+" Pathoger
 set nocp
 execute pathogen#infect()
 call pathogen#helptags() " generate helptags for everything in 'runtimepath'
@@ -371,11 +371,11 @@ command! XXX call s:xxxsearch()
 function! s:xxxsearch()
     if TabooTabName(tabpagenr()) == "XXX"
         :normal ggdG
-        :silent exec "r ! ag --ignore *.pb.go XXX"
+        :silent exec 'r ! ag --ignore "*.pb.go" XXX'
     else
         :tabnew
         :TabooRename XXX
-        :silent exec "r ! ag --ignore *.pb.go XXX"
+        :silent exec 'r ! ag --ignore "*.pb.go" XXX'
         :setlocal buftype=nofile
     endif
     exe "normal ggiXXX"
