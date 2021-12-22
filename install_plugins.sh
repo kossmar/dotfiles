@@ -31,3 +31,6 @@ git clone https://github.com/preservim/nerdcommenter.git
 
 # Install plugin directory
 mkdir -p ~/.vim/plugin && curl -LSso ~/.vim/plugin/taboo.vim https://raw.githubusercontent.com/gcmt/taboo.vim/master/plugin/taboo.vim
+
+# install ag _the_silver_searcher_
+brew install the_silver_searcher
