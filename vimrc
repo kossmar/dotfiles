@@ -20,6 +20,11 @@ set ai fo+=q
 " text width to 80 for better line formatting
 set tw=80 
 
+" set character count in the status bar
+set ruler
+" set line count
+set number  
+
 " nerd tree show hidden by default
 " let g:NERDTreeShowHidden = 1
 
@@ -43,7 +48,6 @@ syntax on
 
 " filetype plugin on  
 filetype plugin indent on
-set number  
 let g:go_disable_autoinstall = 0
 
 " Highlight
@@ -175,6 +179,10 @@ vnoremap copy :w !pbcopy<CR><CR>
 " http://vim.wikia.com/wiki/Search_and_replace_the_word_under_the_cursor 
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/g<Left><Left>
 vnoremap <Leader>s y:%s/<C-r>"/<C-r>"/g<Left><Left>
+
+" remap fro quick search replace across multiple files
+" note: must first move all files you want to search to argument-list (:args)
+nnoremap <Leader>r :argdo %s/\<<C-r><C-w>\>/<C-r><C-w>/g <Bar> update<Left><Left>
 
 nnoremap dup {v}y}p}dd{ 
 nnoremap cut {v}xO<Esc>
