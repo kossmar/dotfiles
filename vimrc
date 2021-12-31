@@ -291,6 +291,10 @@ let g:gh_line_map = 'git'
 nnoremap <Leader>json yiwA `json:"<esc>pbve:s#\%V\(\<\u\l\+\\|\l\+\)\(\u\)#\l\1_\l\2#g<CR>A"`<esc>
 nnoremap <Leader>camel bve:s#\%V\(\<\u\l\+\\|\l\+\)\(\u\)#\l\1_\l\2#g<CR><esc>
 nnoremap <Leader>err oif err != nil {<CR>return err<CR><left><left>}<esc>
+
+" inserts 'require.Nil(t, err)i' for testing
+nnoremap <Leader>errnil orequire.Nil(t, err)<esc>
+
 nnoremap viwp viwpyiwgvy
 nnoremap F ggVGgq
 nnoremap cd ciw<esc>
