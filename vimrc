@@ -1,4 +1,4 @@
-" Pathoger
+" Pathogen
 set nocp
 execute pathogen#infect()
 call pathogen#helptags() " generate helptags for everything in 'runtimepath'
@@ -296,7 +296,7 @@ nnoremap <Leader>err oif err != nil {<CR>return err<CR><left><left>}<esc>
 nnoremap <Leader>errnil orequire.Nil(t, err)<esc>
 
 nnoremap viwp viwpyiwgvy
-nnoremap F ggVGgq
+nnoremap <Leader>f ggVGgq
 nnoremap cd ciw<esc>
 nnoremap <C-g> yiwjviwp
 
