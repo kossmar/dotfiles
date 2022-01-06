@@ -34,3 +34,8 @@ mkdir -p ~/.vim/plugin && curl -LSso ~/.vim/plugin/taboo.vim https://raw.githubu
 
 # install ag _the_silver_searcher_
 brew install the_silver_searcher
+
+# install trash
+#     trash -rf <file/dir> to move to trash bin
+brew install trash
+
