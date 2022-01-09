@@ -294,6 +294,8 @@ nnoremap <Leader>err oif err != nil {<CR>return err<CR><left><left>}<esc>
 
 " inserts 'require.Nil(t, err)' for testing
 nnoremap <Leader>errnil orequire.Nil(t, err)<esc>
+" inserts 'require.NoError(t, err)' for testing
+nnoremap <Leader>noerr orequire.NoError(t, err)<esc>
 
 nnoremap viwp viwpyiwgvy
 nnoremap <Leader>f ggVGgq
